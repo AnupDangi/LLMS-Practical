@@ -4,4 +4,6 @@
 Complete demo
 [Notebook](micrograd/demo.ipynb)
 
-[Learn about Transformers and LLMs](%20Stanford%20CME295%20Transformers%20%26%20LLMs/Readme.md)
+# Standford CME295: Transformers & LLMs (Fall 2025)
+
+[Notes](Stanford_CME295_Transformers_LLMs/Readme.md)
