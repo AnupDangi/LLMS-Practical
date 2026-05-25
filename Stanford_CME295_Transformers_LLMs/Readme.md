@@ -1,83 +1,61 @@
-Follow this roadmap to learn about Transformers and Large Language Models (LLMs) in the context of the Stanford CME295 course. This roadmap is designed to provide a structured learning path, covering foundational concepts, key architectures, and practical applications.
+[![Course overview](image.png)](https://youtu.be/Ub3GoFaUcds?si=Du6rbm9ec3DcJuBr)
 
-## Course Syllabus
+# Stanford CME295 — Transformers & LLMs
 
-### Lecture Schedule
+**Course:** [CME 295 — Transformers and LLMs](https://youtu.be/Ub3GoFaUcds?si=Du6rbm9ec3DcJuBr) · [Syllabus & lecture PDFs](https://cme295.stanford.edu/syllabus/)
 
-- **Lecture 1: Transformer** (October 3rd, 2025)
-  - Background on NLP and tasks
-  - Tokenization
-  - Embeddings
-  - Word2vec, RNN, LSTM
-  - Attention mechanism
-  - Transformer architecture
-  - [lecture 1](./fall25-cme295-lecture1.pdf)
+Graduate-level lecture notes for Transformers and large language models (Fall 2025).
 
-- **Lecture 2: Transformer-based models & tricks** (October 10th, 2025)
-  - Attention approximation
-  - MHA, MQA, GQA
-  - Position embeddings (regular, learned)
-  - RoPE and applications
-  - Transformer-based architectures
-  - BERT and its derivatives
-  - [lecture 2](./fall25-cme295-lecture2.pdf)
+## Prerequisites
 
-- **Lecture 3: Large Language Models** (October 17th, 2025)
-  - Definition and architecture
-  - Mixture of experts
-  - Context length, temperature
-  - Sampling strategies
-  - Prompting, in-context learning
-  - Chain of thought
-  - Self-consistency
-  - [lecture 3](./fall25-cme295-lecture3.pdf)
+- [makemore](../makemore/Readme.md) or equivalent ML + sequence modeling basics
+- Helpful after [Transformers_DL.ai](../Transformers_DL.ai/Readme.md) for hands-on tokenizer context
 
-- **Lecture 4: LLM training** (October 24th, 2025)
-  - Pretraining
-  - Quantization
-  - Hardware optimization
-  - Supervised finetuning (SFT)
-  - Parameter-efficient finetuning (LoRA)
-  - [lecture 4](./fall25-cme295-lecture4.pdf)
+## What you will learn
 
-- **Midterm** (October 31st, 2025)
-  - [Exam] [Solutions]
+- NLP foundations through Transformers and LLMs
+- Training, tuning, reasoning, agents, RAG, and evaluation at a graduate depth
+- Connections to later repo courses (pretraining, RL, RAG, agents)
 
-- **Lecture 5: LLM tuning** (November 7th, 2025)
-  - Preference tuning
-  - RLHF overview
-  - Reward modeling
-  - RL approaches (PPO and variants)
-  - DPO
-  - [lecture 5](./fall25-cme295-lecture5.pdf)
+## How to use this folder
 
-- **Lecture 6: LLM reasoning** (November 14th, 2025)
-  - Reasoning models
-  - RL for reasoning
-  - GRPO
-  - Scaling
-  - [lecture 6](./fall25-cme295-lecture6.pdf)
+There are **no notebooks** here—only PDFs and a cheatsheet.
 
-- **Lecture 7: Agentic LLMs** (November 21st, 2025)
-  - Retrieval-augmented generation
-  - Advanced RAG techniques
-  - Function calling
-  - Agents
-  - ReAct framework
-  - [lecture 7](./fall25-cme295-lecture7.pdf)
+1. Read lectures **in order** (1 → 9).
+2. Use [cheatsheet-transformers-large-language-models.pdf](cheatsheet-transformers-large-language-models.pdf) for quick review before exams or interviews.
+3. Map lectures to hands-on work elsewhere in this repo (see table below).
 
-- **Lecture 8: LLM evaluation** (December 5th, 2025)
-  - LLM-as-a-judge overview
-  - Best practices and benefits
-  - Biases and pitfalls
-  - [lecture 8](./fall25-cme295-lecture8.pdf)
+| Lecture | Topics | Related repo courses |
+| ------- | ------ | -------------------- |
+| 1 | Tokenization, embeddings, attention, Transformer | [Transformers_DL.ai](../Transformers_DL.ai/Readme.md) |
+| 2 | MHA/MQA/GQA, RoPE, BERT family | [Transformers_DL.ai](../Transformers_DL.ai/Readme.md) |
+| 3 | LLM architecture, MoE, prompting, CoT | [PreTraining_DL.ai](../PreTraining_DL.ai/Readme.md) |
+| 4 | Pretraining, quantization, SFT, LoRA | [PreTraining_DL.ai](../PreTraining_DL.ai/Readme.md), [Finetuning_DL.ai](../Finetuning_DL.ai/Readme.md) |
+| 5 | RLHF, DPO, preference tuning | [Post-training DL.ai](../Fine-tuning%20&%20RL%20for%20LLMs:%20Intro%20to%20Post-training_DL.ai/Readme.md) |
+| 6 | Reasoning models, GRPO | Post-training Module 2 |
+| 7 | RAG, agents, ReAct | [Advanced RAG](../BuildingandEvaluatingAdvancedRAG_DL.ai/Readme.md), [LangGraph memory](../Long-Term%20Agentic%20Memory%20With%20LangGraph_DL.ai/Readme.md) |
+| 8 | LLM-as-judge, evaluation | [Finetuning_DL.ai](../Finetuning_DL.ai/Readme.md) lab 06, Post-training Module 3 |
+| 9 | Trends, recap | — |
 
-- **Lecture 9: Current trends** (Date TBD)
-  - Recap
-  - Trending topics
-  - Closing thoughts
-  - [lecture 9](./fall25-cme295-lecture9.pdf)
+## Lecture files
 
-## Additional Resources
+| Lecture | Date (2025) | PDF |
+| ------- | ----------- | --- |
+| 1 — Transformer | Oct 3 | [fall25-cme295-lecture1.pdf](fall25-cme295-lecture1.pdf) |
+| 2 — Transformer-based models & tricks | Oct 10 | [fall25-cme295-lecture2.pdf](fall25-cme295-lecture2.pdf) |
+| 3 — Large Language Models | Oct 17 | [fall25-cme295-lecture3.pdf](fall25-cme295-lecture3.pdf) |
+| 4 — LLM training | Oct 24 | [fall25-cme295-lecture4.pdf](fall25-cme295-lecture4.pdf) |
+| 5 — LLM tuning | Nov 7 | [fall25-cme295-lecture5.pdf](fall25-cme295-lecture5.pdf) |
+| 6 — LLM reasoning | Nov 14 | [fall25-cme295-lecture6.pdf](fall25-cme295-lecture6.pdf) |
+| 7 — Agentic LLMs | Nov 21 | [fall25-cme295-lecture7.pdf](fall25-cme295-lecture7.pdf) |
+| 8 — LLM evaluation | Dec 5 | [fall25-cme295-lecture8.pdf](fall25-cme295-lecture8.pdf) |
+| 9 — Current trends | TBD | [fall25-cme295-lecture9.pdf](fall25-cme295-lecture9.pdf) |
 
-- [Course Syllabus](https://cme295.stanford.edu/syllabus/)
+Midterm was Oct 31, 2025 (materials on course site).
+
+## Setup
+
+- **Packages:** None required for PDFs.
+- **Hardware:** Any PDF reader.
+
+[← Back to learning path](../README.md)
