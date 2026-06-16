@@ -192,7 +192,7 @@ Deploy and quantize vision models on device (Qualcomm AI Hub). Capstone for edge
 | 3     | [L4 — Quantization](Introduction%20to%20on-device%20AI_DL.ai/L4_Student.ipynb)                |
 | 4     | [Appendix — Build App](Introduction%20to%20on-device%20AI_DL.ai/Appendix-Building_the_App.ipynb) |
 
-## 13. Agentic AI:
+## 13.Agentic AI from DeepLearning.AI
 -[link](https://github.com/AnupDangi/Agentic-AI-)
 ---
 
