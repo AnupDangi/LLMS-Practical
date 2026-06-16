@@ -4,6 +4,7 @@ Work bottom-up: foundations → architecture → training → applied production
 
 Each course folder has a **Readme.md** with notebook order, setup, and API keys. DeepLearning.AI notebooks often reference a `requirements.txt` that is not checked into this repo—see [requirements-notes.md](requirements-notes.md) for inferred installs per course.
 
+**If you want to learn fundamentals of ML,DL and Data Science and NLP refer this repo**- [link](https://github.com/AnupDangi/DS_ML_DL_NLP_BOOTCAMP)
 ---
 
 ## Getting started
@@ -191,6 +192,8 @@ Deploy and quantize vision models on device (Qualcomm AI Hub). Capstone for edge
 | 3     | [L4 — Quantization](Introduction%20to%20on-device%20AI_DL.ai/L4_Student.ipynb)                |
 | 4     | [Appendix — Build App](Introduction%20to%20on-device%20AI_DL.ai/Appendix-Building_the_App.ipynb) |
 
+## 13. Agentic AI:
+-[link](https://github.com/AnupDangi/Agentic-AI-)
 ---
 
 ## Recommended order
