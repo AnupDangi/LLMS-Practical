@@ -4,7 +4,11 @@ Work bottom-up: foundations → architecture → training → applied production
 
 Each course folder has a **Readme.md** with notebook order, setup, and API keys. DeepLearning.AI notebooks often reference a `requirements.txt` that is not checked into this repo—see [requirements-notes.md](requirements-notes.md) for inferred installs per course.
 
-**If you want to learn fundamentals of ML,DL and Data Science and NLP refer this repo**- [link](https://github.com/AnupDangi/DS_ML_DL_NLP_BOOTCAMP)
+**If you want to learn fundamentals refer these repos**
+
+## KrishNaik: ML,DL,Data Science and NLP: [link](https://github.com/AnupDangi/DS_ML_DL_NLP_BOOTCAMP)
+
+## AndrewNG: Machine Learning Specialization: [link](https://github.com/AnupDangi/Machine-Learning-Specialization/)
 ---
 
 ## Getting started
