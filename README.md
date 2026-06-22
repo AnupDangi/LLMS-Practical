@@ -9,6 +9,7 @@ Each course folder has a **Readme.md** with notebook order, setup, and API keys.
 ## KrishNaik: ML,DL,Data Science and NLP: [link](https://github.com/AnupDangi/DS_ML_DL_NLP_BOOTCAMP)
 
 ## AndrewNG: Machine Learning Specialization: [link](https://github.com/AnupDangi/Machine-Learning-Specialization/)
+
 ---
 
 ## Getting started
@@ -61,7 +62,7 @@ DeepLearning.AI course on Transformer internals — tokenizers, attention, archi
 
 | Order | File                                              |
 | ----- | ------------------------------------------------- |
-| 1     | [L2 — Tokenizers](Transformers_DL.ai/L2.ipynb)     |
+| 1     | [L2 — Tokenizers](Transformers_DL.ai/L2.ipynb)    |
 | 2     | [L6 — Full Pipeline](Transformers_DL.ai/L6.ipynb) |
 
 ---
@@ -100,14 +101,14 @@ DeepLearning.AI course on pretraining LLMs — data, compute, training loop.
 
 End-to-end fine-tuning: instruction tuning, data prep, training, evaluation.
 
-| Order | File                                                                                      |
-| ----- | ----------------------------------------------------------------------------------------- |
-| 1     | [Why Fine-tuning](Finetuning_DL.ai/01_Why_finetuning_lab_student.ipynb)                 |
-| 2     | [Where it fits](Finetuning_DL.ai/02_Where_finetuning_fits_in_lab_student.ipynb)           |
-| 3     | [Instruction tuning](Finetuning_DL.ai/03_Instruction_tuning_lab_student.ipynb)            |
-| 4     | [Data prep](Finetuning_DL.ai/04_Data_preparation_lab_student.ipynb)                       |
-| 5     | [Training](Finetuning_DL.ai/05_Training_lab_student.ipynb)                                |
-| 6     | [Evaluation](Finetuning_DL.ai/06_Evaluation_lab_student.ipynb)                            |
+| Order | File                                                                            |
+| ----- | ------------------------------------------------------------------------------- |
+| 1     | [Why Fine-tuning](Finetuning_DL.ai/01_Why_finetuning_lab_student.ipynb)         |
+| 2     | [Where it fits](Finetuning_DL.ai/02_Where_finetuning_fits_in_lab_student.ipynb) |
+| 3     | [Instruction tuning](Finetuning_DL.ai/03_Instruction_tuning_lab_student.ipynb)  |
+| 4     | [Data prep](Finetuning_DL.ai/04_Data_preparation_lab_student.ipynb)             |
+| 5     | [Training](Finetuning_DL.ai/05_Training_lab_student.ipynb)                      |
+| 6     | [Evaluation](Finetuning_DL.ai/06_Evaluation_lab_student.ipynb)                  |
 
 ---
 
@@ -127,12 +128,12 @@ Work through Module 1 → 5 in the [course Readme](Fine-tuning%20%26%20RL%20for%
 
 Implement LLM training using JAX. Assumes prior knowledge from courses above.
 
-| Order | File                                                                 |
-| ----- | -------------------------------------------------------------------- |
-| 1     | [L2 — Architecture](BuildandTrainLLMwithJax_DL.ai/L2.ipynb)           |
-| 2     | [L3 — Data Loading](BuildandTrainLLMwithJax_DL.ai/L3.ipynb)          |
-| 3     | [L4 — Training](BuildandTrainLLMwithJax_DL.ai/L4.ipynb)              |
-| 4     | [L5 — Load Pretrained](BuildandTrainLLMwithJax_DL.ai/L5.ipynb)       |
+| Order | File                                                           |
+| ----- | -------------------------------------------------------------- |
+| 1     | [L2 — Architecture](BuildandTrainLLMwithJax_DL.ai/L2.ipynb)    |
+| 2     | [L3 — Data Loading](BuildandTrainLLMwithJax_DL.ai/L3.ipynb)    |
+| 3     | [L4 — Training](BuildandTrainLLMwithJax_DL.ai/L4.ipynb)        |
+| 4     | [L5 — Load Pretrained](BuildandTrainLLMwithJax_DL.ai/L5.ipynb) |
 
 ---
 
@@ -145,9 +146,9 @@ Advanced RAG pipelines, retrieval strategies, and evaluation (LlamaIndex, TruLen
 | Order | File                                                                                              |
 | ----- | ------------------------------------------------------------------------------------------------- |
 | 1     | [L1 — Advanced Pipeline](BuildingandEvaluatingAdvancedRAG_DL.ai/L1-Advanced_RAG_Pipeline.ipynb)   |
-| 2     | [L2 — RAG Triad Metrics](BuildingandEvaluatingAdvancedRAG_DL.ai/L2-RAG_Triad_of_metrics.ipynb)      |
+| 2     | [L2 — RAG Triad Metrics](BuildingandEvaluatingAdvancedRAG_DL.ai/L2-RAG_Triad_of_metrics.ipynb)    |
 | 3     | [L3 — Sentence Window](BuildingandEvaluatingAdvancedRAG_DL.ai/L3-Sentence_window_retrieval.ipynb) |
-| 4     | [L4 — Auto-merging](BuildingandEvaluatingAdvancedRAG_DL.ai/L4-Auto-merging_Retrieval.ipynb)         |
+| 4     | [L4 — Auto-merging](BuildingandEvaluatingAdvancedRAG_DL.ai/L4-Auto-merging_Retrieval.ipynb)       |
 
 ---
 
@@ -157,11 +158,11 @@ Advanced RAG pipelines, retrieval strategies, and evaluation (LlamaIndex, TruLen
 
 Email assistant with semantic, episodic, and procedural memory using LangGraph.
 
-| Order | File                                                                                      |
-| ----- | ----------------------------------------------------------------------------------------- |
-| 1     | [Lesson 2 — Baseline](Long-Term%20Agentic%20Memory%20With%20LangGraph_DL.ai/lesson2.ipynb) |
-| 2     | [Lesson 3 — Semantic](Long-Term%20Agentic%20Memory%20With%20LangGraph_DL.ai/lesson_3.ipynb) |
-| 3     | [Lesson 4 — + Episodic](Long-Term%20Agentic%20Memory%20With%20LangGraph_DL.ai/lesson_4.ipynb) |
+| Order | File                                                                                            |
+| ----- | ----------------------------------------------------------------------------------------------- |
+| 1     | [Lesson 2 — Baseline](Long-Term%20Agentic%20Memory%20With%20LangGraph_DL.ai/lesson2.ipynb)      |
+| 2     | [Lesson 3 — Semantic](Long-Term%20Agentic%20Memory%20With%20LangGraph_DL.ai/lesson_3.ipynb)     |
+| 3     | [Lesson 4 — + Episodic](Long-Term%20Agentic%20Memory%20With%20LangGraph_DL.ai/lesson_4.ipynb)   |
 | 4     | [Lesson 5 — + Procedural](Long-Term%20Agentic%20Memory%20With%20LangGraph_DL.ai/lesson_5.ipynb) |
 
 Lesson 1 is not included in this repo; start at Lesson 2 or watch the course videos first.
@@ -174,10 +175,10 @@ Lesson 1 is not included in this repo; start at Lesson 2 or watch the course vid
 
 Voice agent components and latency optimization for production.
 
-| Order | File                                                                                    |
-| ----- | --------------------------------------------------------------------------------------- |
+| Order | File                                                                                           |
+| ----- | ---------------------------------------------------------------------------------------------- |
 | 1     | [Lesson 4 — Components](Building%20AI%20Voice%20Agents%20for%20Production_DL.ai/Lesson4.ipynb) |
-| 2     | [Lesson 5 — Latency](Building%20AI%20Voice%20Agents%20for%20Production_DL.ai/Lesson5.ipynb)      |
+| 2     | [Lesson 5 — Latency](Building%20AI%20Voice%20Agents%20for%20Production_DL.ai/Lesson5.ipynb)    |
 
 Lessons 1–3 are not in this repo; use the DeepLearning.AI course for earlier lessons.
 
@@ -189,16 +190,16 @@ Lessons 1–3 are not in this repo; use the DeepLearning.AI course for earlier l
 
 Deploy and quantize vision models on device (Qualcomm AI Hub). Capstone for edge deployment—not text LLMs.
 
-| Order | File                                                                                          |
-| ----- | --------------------------------------------------------------------------------------------- |
-| 1     | [L2 — Deploy Segmentation](Introduction%20to%20on-device%20AI_DL.ai/L2_Student.ipynb)           |
-| 2     | [L3 — Prepare Deployment](Introduction%20to%20on-device%20AI_DL.ai/L3_Student.ipynb)           |
-| 3     | [L4 — Quantization](Introduction%20to%20on-device%20AI_DL.ai/L4_Student.ipynb)                |
+| Order | File                                                                                             |
+| ----- | ------------------------------------------------------------------------------------------------ |
+| 1     | [L2 — Deploy Segmentation](Introduction%20to%20on-device%20AI_DL.ai/L2_Student.ipynb)            |
+| 2     | [L3 — Prepare Deployment](Introduction%20to%20on-device%20AI_DL.ai/L3_Student.ipynb)             |
+| 3     | [L4 — Quantization](Introduction%20to%20on-device%20AI_DL.ai/L4_Student.ipynb)                   |
 | 4     | [Appendix — Build App](Introduction%20to%20on-device%20AI_DL.ai/Appendix-Building_the_App.ipynb) |
 
 ## 13.Agentic AI from DeepLearning.AI
--[link](https://github.com/AnupDangi/Agentic-AI-)
----
+
+## -[link](https://github.com/AnupDangi/Agentic-AI-)
 
 ## Recommended order
 
@@ -208,3 +209,8 @@ micrograd → makemore → Transformers_DL.ai → Stanford_CME295
     → Post-training (RL) → BuildandTrainLLMwithJax
     → Advanced RAG → LangGraph Memory → Voice Agents → On-device AI
 ```
+
+## Extra resources to follow and be updated with AI applications and research.
+
+- https://aiengineeringfromscratch.com/
+- https://www.aibuilderclub.com/
