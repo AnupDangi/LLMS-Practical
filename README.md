@@ -114,11 +114,11 @@ End-to-end fine-tuning: instruction tuning, data prep, training, evaluation.
 
 ## 7. Post-training: Fine-tuning & RL
 
-**Folder:** [`Fine-tuning & RL for LLMs: Intro to Post-training_DL.ai`](Fine-tuning%20%26%20RL%20for%20LLMs:%20Intro%20to%20Post-training_DL.ai/Readme.md) — [Readme]
+**Folder:** [`Fine-tuning & RL for LLMs: Intro to Post-training_DL.ai`](Fine-tuning%20%26%20RL%20for%20LLMs%3A%20Intro%20to%20Post-training_DL.ai/Readme.md)- [Readme]
 
 RLHF, GRPO, reward modeling, evaluation, and production. Five modules.
 
-Work through Module 1 → 5 in the [course Readme](Fine-tuning%20%26%20RL%20for%20LLMs:%20Intro%20to%20Post-training_DL.ai/Readme.md).
+Work through Module 1 → 5.
 
 ---
 
