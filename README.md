@@ -197,7 +197,43 @@ Deploy and quantize vision models on device (Qualcomm AI Hub). Capstone for edge
 | 3     | [L4 — Quantization](Introduction%20to%20on-device%20AI_DL.ai/L4_Student.ipynb)                   |
 | 4     | [Appendix — Build App](Introduction%20to%20on-device%20AI_DL.ai/Appendix-Building_the_App.ipynb) |
 
-## 13.Agentic AI from DeepLearning.AI
+---
+
+## 13. Agent Memory: Building Memory-Aware Agents
+
+**Folder:** [`Agent Memory: Building Memory-Aware Agents_DL.ai/`](Agent%20Memory:%20Building%20Memory-Aware%20Agents_DL.ai/) — [Readme](Agent%20Memory:%20Building%20Memory-Aware%20Agents_DL.ai/Readme.md)
+
+Build agents with semantic, episodic, and procedural memory systems for long-term context retention and intelligent decision-making.
+
+| Order | File | Lesson title |
+| ----- | ---- | ------------ |
+| 1 | [L2.ipynb](Agent%20Memory:%20Building%20Memory-Aware%20Agents_DL.ai/L2.ipynb) | Memory Systems Fundamentals |
+| 2 | [L3.ipynb](Agent%20Memory:%20Building%20Memory-Aware%20Agents_DL.ai/L3.ipynb) | Semantic Memory & Retrieval |
+| 3 | [L4.ipynb](Agent%20Memory:%20Building%20Memory-Aware%20Agents_DL.ai/L4.ipynb) | Episodic & Procedural Memory |
+| 4 | [L5.ipynb](Agent%20Memory:%20Building%20Memory-Aware%20Agents_DL.ai/L5.ipynb) | Scaling & Production Patterns |
+
+---
+
+## 14. A2A Protocol: Agentic AI on Vertex AI
+
+**Folder:** [`A2AProtocol_DL.ai/`](A2AProtocol_DL.ai/) — [Readme](A2AProtocol_DL.ai/Readme.md)
+
+Build production-grade agentic AI systems using Google Vertex AI with Claude. Learn prompt caching, multi-turn conversations, and tool-based agent patterns.
+
+| Order | File | Lesson title |
+| ----- | ---- | ------------ |
+| 1 | [L3.ipynb](A2AProtocol_DL.ai/L3.ipynb) | Building a QA Agent with Claude on Vertex AI |
+| 2 | [L4.ipynb](A2AProtocol_DL.ai/L4.ipynb) | Prompt Caching & Cost Optimization |
+| 3 | [L5.ipynb](A2AProtocol_DL.ai/L5.ipynb) | Multi-Turn Conversations |
+| 4 | [L6.ipynb](A2AProtocol_DL.ai/L6.ipynb) | Advanced Tool Calling |
+| 5 | [L7.ipynb](A2AProtocol_DL.ai/L7.ipynb) | Agent Workflow Patterns |
+| 6 | [L8.ipynb](A2AProtocol_DL.ai/L8.ipynb) | Error Handling & Robustness |
+| 7 | [L9.ipynb](A2AProtocol_DL.ai/L9.ipynb) | Performance Optimization |
+| 8 | [L10.ipynb](A2AProtocol_DL.ai/L10.ipynb) | Production Deployment |
+
+---
+
+## 15. Agentic AI from DeepLearning.AI
 
 ## -[link](https://github.com/AnupDangi/Agentic-AI-)
 
@@ -207,7 +243,8 @@ Deploy and quantize vision models on device (Qualcomm AI Hub). Capstone for edge
 micrograd → makemore → Transformers_DL.ai → Stanford_CME295
     → PreTraining_DL.ai → Finetuning_DL.ai
     → Post-training (RL) → BuildandTrainLLMwithJax
-    → Advanced RAG → LangGraph Memory → Voice Agents → On-device AI
+    → Advanced RAG → LangGraph Memory → Voice Agents → Agent Memory
+    → A2A Protocol → On-device AI
 ```
 
 ## Extra resources to follow and be updated with AI applications and research.
