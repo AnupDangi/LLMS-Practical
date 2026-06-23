@@ -1,6 +1,7 @@
 # Agent Memory: Building Memory-Aware Agents (DeepLearning.AI)
 
 **Course:** [Agent Memory: Building Memory-Aware Agents](https://www.deeplearning.ai/short-courses/agent-memory-building-memory-aware-agents/)
+![Course Banner](course.png)
 
 Build and scale agents with semantic, episodic, and procedural memory systems for long-term context retention and intelligent decision-making.
 
