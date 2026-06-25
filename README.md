@@ -233,7 +233,23 @@ Build production-grade agentic AI systems using Google Vertex AI with Claude. Le
 
 ---
 
-## 15. Agentic AI from DeepLearning.AI
+## 15. Build Interactive Agents with Generative UI
+
+**Folder:** [`BuildInteractiveAgentswithGenerativeUI_DL.ai/`](BuildInteractiveAgentswithGenerativeUI_DL.ai/) — [Readme](BuildInteractiveAgentswithGenerativeUI_DL.ai/README.md)
+
+Build interactive AI agents with dynamic user interfaces. Master Generative UI paradigms: controlled, declarative, MCP-integrated, and fully open-ended generation.
+
+**Key Topics:**
+- Controlled Generative UI (rules-based)
+- Declarative Generative UI (intent-based)
+- Dynamic schema with fixed shapes
+- Open-ended code generation
+- LLM integration & real-time rendering
+- User interaction feedback loops
+
+---
+
+## 16. Agentic AI from DeepLearning.AI
 
 ## -[link](https://github.com/AnupDangi/Agentic-AI-)
 
@@ -244,7 +260,7 @@ micrograd → makemore → Transformers_DL.ai → Stanford_CME295
     → PreTraining_DL.ai → Finetuning_DL.ai
     → Post-training (RL) → BuildandTrainLLMwithJax
     → Advanced RAG → LangGraph Memory → Voice Agents → Agent Memory
-    → A2A Protocol → On-device AI
+    → A2A Protocol → Generative UI → On-device AI
 ```
 
 ## Extra resources to follow and be updated with AI applications and research.
