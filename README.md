@@ -1,4 +1,5 @@
 # LLMs Practical — Learning Path
+<img width="2114" height="706" alt="image" src="https://github.com/user-attachments/assets/900e3c27-3790-4b97-ae8b-3e50ee13c72c" />
 
 Work bottom-up: foundations → architecture → training → applied production.
 
