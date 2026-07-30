@@ -4,6 +4,8 @@ This repo is my structured, end-to-end path to understanding Large Language Mode
 
 > **The idea:** don't treat LLMs as a black box. Build the pieces yourself (autograd → transformer → training → fine-tuning → RL), then layer on applied skills (RAG, memory, agents, voice, on-device), and keep sharpening intuition by reading papers.
 
+[Cover-Image](./coverimg.png)
+
 ### What's inside
 
 | Category | Folders | What you get |
