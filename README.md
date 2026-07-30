@@ -1,15 +1,30 @@
-# LLMs Practical — Learning Path
-<img width="2114" height="706" alt="image" src="https://github.com/user-attachments/assets/900e3c27-3790-4b97-ae8b-3e50ee13c72c" />
+# LLMs Practical — A Hands-On Learning Journey
 
-Work bottom-up: foundations → architecture → training → applied production.
+This repo is my structured, end-to-end path to understanding Large Language Models — **from the math of backprop to production-grade agents**. It is built to be followed by anyone: each topic is a self-contained folder with runnable notebooks, a short `Readme`, and notes.
 
-Each course folder has a **Readme.md** with notebook order, setup, and API keys. DeepLearning.AI notebooks often reference a `requirements.txt` that is not checked into this repo—see [requirements-notes.md](requirements-notes.md) for inferred installs per course.
+> **The idea:** don't treat LLMs as a black box. Build the pieces yourself (autograd → transformer → training → fine-tuning → RL), then layer on applied skills (RAG, memory, agents, voice, on-device), and keep sharpening intuition by reading papers.
 
-**If you want to learn fundamentals refer these repos**
+### What's inside
 
-## KrishNaik: ML,DL,Data Science and NLP: [link](https://github.com/AnupDangi/DS_ML_DL_NLP_BOOTCAMP)
+| Category | Folders | What you get |
+| -------- | ------- | ------------ |
+| **Foundations** | `micrograd`, `makemore` | Autograd + character-level LMs, coded from scratch (Karpathy) |
+| **Architecture & theory** | `Transformers_DL.ai`, `Stanford_CME295_Transformers_LLMs` | How transformers actually work, plus a graduate lecture series |
+| **Training stack** | `PreTraining_DL.ai`, `Finetuning_DL.ai`, `Fine-tuning & RL … Post-training`, `BuildandTrainLLMwithJax_DL.ai` | Pretraining → SFT → RLHF/GRPO → build & train in JAX |
+| **Applied / production** | `BuildingandEvaluatingAdvancedRAG_DL.ai`, `Long-Term Agentic Memory …`, `Agent Memory …`, `A2AProtocol_DL.ai`, `BuildInteractiveAgentswithGenerativeUI_DL.ai`, `AgenticKnowledgeGraphConstruction_DL.ai`, `Building AI Voice Agents …`, `Introduction to on-device AI_DL.ai` | RAG, agent memory, multi-agent protocols, generative UI, knowledge graphs, voice, edge deployment |
+| **Papers & notes** | `100-Days-ResearchPapers`, `ResearchPapers`, `advanced-extra-notes`, `Hands-on-llm-book` | Daily paper summaries, reading lists, and deep-dive PDFs |
 
-## AndrewNG: Machine Learning Specialization: [link](https://github.com/AnupDangi/Machine-Learning-Specialization/)
+### How to use this repo
+
+1. **New here?** Follow the numbered sections below in order (they go bottom-up).
+2. Each folder has its own **`Readme`** with notebook order, prerequisites, setup, and API keys — always open it first.
+3. Read a topic's notes/paper summaries alongside the notebooks to build intuition.
+4. DeepLearning.AI notebooks reference a `requirements.txt` that isn't checked in — see [requirements-notes.md](requirements-notes.md) for inferred installs per course.
+
+**Prefer to shore up fundamentals first?** These companion repos cover the ML/DL basics:
+
+- **KrishNaik — ML, DL, Data Science & NLP:** [DS_ML_DL_NLP_BOOTCAMP](https://github.com/AnupDangi/DS_ML_DL_NLP_BOOTCAMP)
+- **Andrew Ng — Machine Learning Specialization:** [Machine-Learning-Specialization](https://github.com/AnupDangi/Machine-Learning-Specialization/)
 
 ---
 
@@ -250,9 +265,29 @@ Build interactive AI agents with dynamic user interfaces. Master Generative UI p
 
 ---
 
-## 16. Agentic AI from DeepLearning.AI
+## 16. Agentic Knowledge Graph Construction
 
-## -[link](https://github.com/AnupDangi/Agentic-AI-)
+**Folder:** [`AgenticKnowledgeGraphConstruction_DL.ai/`](AgenticKnowledgeGraphConstruction_DL.ai/) — [Readme](AgenticKnowledgeGraphConstruction_DL.ai/README.md)
+
+Use Google's Agent Development Kit (ADK) + Neo4j to build agents that turn raw data into a knowledge graph — understanding user intent, proposing a schema, and constructing the graph.
+
+| Order | File | Lesson |
+| ----- | ---- | ------ |
+| 1 | [intro_to_adk_1.ipynb](AgenticKnowledgeGraphConstruction_DL.ai/intro_to_adk_1.ipynb) | L3 — Intro to Google's ADK (Part I) |
+| 2 | [intro_to_adk_2.ipynb](AgenticKnowledgeGraphConstruction_DL.ai/intro_to_adk_2.ipynb) | L3 — Intro to Google's ADK (Part II) |
+| 3 | [user_intent.ipynb](AgenticKnowledgeGraphConstruction_DL.ai/user_intent.ipynb) | L4 — Understanding User Intent |
+| 4 | [file_suggestion.ipynb](AgenticKnowledgeGraphConstruction_DL.ai/file_suggestion.ipynb) | L5 — File Suggestions |
+| 5 | [schema_proposal_structured.ipynb](AgenticKnowledgeGraphConstruction_DL.ai/schema_proposal_structured.ipynb) | L6 — Schema Proposal for Structured Data |
+| 6 | [kg_construction_1.ipynb](AgenticKnowledgeGraphConstruction_DL.ai/kg_construction_1.ipynb) | L8 — Knowledge Graph Construction (Part I) |
+| 7 | [kg_construction_2.ipynb](AgenticKnowledgeGraphConstruction_DL.ai/kg_construction_2.ipynb) | L8 — Knowledge Graph Construction (Part II) |
+
+---
+
+## 17. Agentic AI from DeepLearning.AI
+
+A separate repo with the full Agentic AI course work: [AnupDangi/Agentic-AI-](https://github.com/AnupDangi/Agentic-AI-)
+
+---
 
 ## Recommended order
 
@@ -260,11 +295,30 @@ Build interactive AI agents with dynamic user interfaces. Master Generative UI p
 micrograd → makemore → Transformers_DL.ai → Stanford_CME295
     → PreTraining_DL.ai → Finetuning_DL.ai
     → Post-training (RL) → BuildandTrainLLMwithJax
-    → Advanced RAG → LangGraph Memory → Voice Agents → Agent Memory
-    → A2A Protocol → Generative UI → On-device AI
+    → Advanced RAG → LangGraph Memory → Agent Memory → Voice Agents
+    → A2A Protocol → Generative UI → Knowledge Graph → On-device AI
 ```
 
-## Extra resources to follow and be updated with AI applications and research.
+Read paper summaries and notes in parallel — they reinforce whatever stage you're on.
 
-- https://aiengineeringfromscratch.com/
-- https://www.aibuilderclub.com/
+---
+
+## Papers, notes & references
+
+Learning isn't only notebooks. These folders keep the intuition sharp:
+
+| Folder | What it is |
+| ------ | ---------- |
+| [`100-Days-ResearchPapers/`](100-Days-ResearchPapers/README.md) | One research paper a day, summarized in my own words with links and takeaways. Start: [Day 1 — Attention Is All You Need](100-Days-ResearchPapers/01-Day-AttentionisAllyouneed.md) |
+| [`ResearchPapers/`](ResearchPapers/README.md) | Curated reading list (YC Paper Club): inference, diffusion, world models, agentic workflows, protein biology |
+| [`advanced-extra-notes/`](advanced-extra-notes/README.md) | Deep-dive PDF notes: KV cache, LLM inference economics, and training-core revision |
+| [`Hands-on-llm-book/`](Hands-on-llm-book/Readme.md) | Companion pointer to the *Hands-On Large Language Models* book |
+
+---
+
+## Stay updated
+
+Resources I follow for the latest in AI applications and research:
+
+- [AI Engineering from Scratch](https://aiengineeringfromscratch.com/)
+- [AI Builder Club](https://www.aibuilderclub.com/)
