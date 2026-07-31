@@ -393,10 +393,7 @@ The final vector $y$ contains one unnormalized score, or logit, for every vocabu
 The model converts logits into probabilities:
 
 $$
-P(w_t=i\mid\text{context})
-=
-\frac{e^{y_i}}
-{\sum_j e^{y_j}}
+P(w_t = i \mid \text{context}) = \frac{e^{y_i}}{\sum_{j} e^{y_j}}
 $$
 
 Softmax guarantees:
@@ -440,13 +437,11 @@ Large logits can cause numerical overflow.
 The paper subtracts the maximum logit before exponentiation:
 
 $$
-Q=\max_j y_j
+Q = \max_{j} y_j
 $$
 
 $$
-P_i=
-\frac{e^{y_i-Q}}
-{\sum_j e^{y_j-Q}}
+P_i = \frac{e^{y_i - Q}}{\sum_{j} e^{y_j - Q}}
 $$
 
 Subtracting the same constant from every logit does not change the final softmax probabilities.
@@ -460,13 +455,7 @@ This is still standard practice in modern deep-learning libraries.
 The model maximizes penalized log-likelihood:
 
 $$
-L=
-\frac{1}{T}
-\sum_t
-\log
-P(w_t\mid w_{t-1},\ldots,w_{t-n+1})
-+
-R(\theta)
+L = \frac{1}{T}\sum_{t} \log P(w_t \mid w_{t-1}, \dots, w_{t-n+1}) + R(\theta)
 $$
 
 In plain language:
@@ -488,12 +477,7 @@ The paper applies weight decay to neural-network weights and the embedding matri
 The paper uses stochastic gradient ascent:
 
 $$
-\theta
-\leftarrow
-\theta+
-\epsilon
-\nabla_\theta
-\log P(w_t\mid\text{context})
+\theta \leftarrow \theta + \epsilon \nabla_{\theta} \log P(w_t \mid \text{context})
 $$
 
 where:
@@ -505,9 +489,7 @@ where:
 Modern systems often minimize negative log-likelihood with gradient descent:
 
 $$
-\mathcal{L}
-=
--\log P(w_t\mid\text{context})
+\mathcal{L} = -\log P(w_t \mid \text{context})
 $$
 
 These are mathematically equivalent:
@@ -560,13 +542,7 @@ The model learns usage patterns, not dictionary definitions.
 The paper evaluates language models with perplexity:
 
 $$
-\operatorname{PPL}
-=
-\exp\left(
--\frac{1}{T}
-\sum_t
-\log P(w_t\mid\text{context})
-\right)
+\operatorname{PPL} = \exp\left(-\frac{1}{T}\sum_{t}\log P(w_t \mid \text{context})\right)
 $$
 
 Lower perplexity is better.
@@ -606,11 +582,7 @@ This was effective because most computation occurred in the output layer.
 The authors combined the neural model and a trigram model:
 
 $$
-P_{\text{mixture}}
-=
-\alpha P_{\text{neural}}
-+
-(1-\alpha)P_{\text{trigram}}
+P_{\text{mixture}} = \alpha P_{\text{neural}} + (1 - \alpha) P_{\text{trigram}}
 $$
 
 This helped because the models made different kinds of errors:
