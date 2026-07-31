@@ -64,16 +64,13 @@ should also help the model understand sentences such as:
 A language model assigns a probability to a sequence of words:
 
 $$
-P(w_1,w_2,\ldots,w_T)
+P(w_1, w_2, \dots, w_T)
 $$
 
 Using the chain rule:
 
 $$
-P(w_1,w_2,\ldots,w_T)
-=
-\prod_{t=1}^{T}
-P(w_t\mid w_1,\ldots,w_{t-1})
+P(w_1, w_2, \dots, w_T) = \prod_{t=1}^{T} P\!\left(w_t \mid w_1, \dots, w_{t-1}\right)
 $$
 
 This means that the probability of a sentence is built from a series of next-word predictions.
@@ -100,9 +97,7 @@ $$
 An n-gram model predicts a word using only the previous $n-1$ words:
 
 $$
-P(w_t\mid w_1,\ldots,w_{t-1})
-\approx
-P(w_t\mid w_{t-n+1},\ldots,w_{t-1})
+P(w_t \mid w_1, \dots, w_{t-1}) \approx P(w_t \mid w_{t-n+1}, \dots, w_{t-1})
 $$
 
 A trigram model uses only two previous words.
@@ -122,11 +117,7 @@ A basic n-gram table treats `cat` and `dog` as unrelated symbols. Learning a seq
 When an exact trigram is unseen, a model may use a shorter context:
 
 $$
-P(w_t\mid w_{t-2},w_{t-1})
-\rightarrow
-P(w_t\mid w_{t-1})
-\rightarrow
-P(w_t)
+P(w_t \mid w_{t-2}, w_{t-1}) \rightarrow P(w_t \mid w_{t-1}) \rightarrow P(w_t)
 $$
 
 This prevents unseen sequences from receiving zero probability, but it does not create semantic understanding.
