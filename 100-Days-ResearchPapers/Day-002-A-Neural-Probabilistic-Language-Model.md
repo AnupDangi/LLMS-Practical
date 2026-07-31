@@ -542,7 +542,7 @@ The model learns usage patterns, not dictionary definitions.
 The paper evaluates language models with perplexity:
 
 $$
-\operatorname{PPL} = \exp\left(-\frac{1}{T}\sum_{t}\log P(w_t \mid \text{context})\right)
+\mathrm{PPL} = \exp\left(-\frac{1}{T}\sum_{t}\log P(w_t \mid \mathrm{context})\right)
 $$
 
 Lower perplexity is better.
