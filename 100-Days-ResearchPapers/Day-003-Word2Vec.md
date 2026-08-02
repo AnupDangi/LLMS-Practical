@@ -7,6 +7,7 @@
 **Year:** 2013  
 **Core topic:** Efficient learning of distributed word representations  
 **Main models:** Continuous Bag-of-Words (CBOW) and Continuous Skip-gram
+
 **Paper Link:** https://arxiv.org/pdf/1301.3781
 ---
 
