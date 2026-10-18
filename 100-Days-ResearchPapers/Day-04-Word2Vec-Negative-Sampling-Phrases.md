@@ -113,15 +113,7 @@ for the output comparison part.
 ### Objective
 
 $$
-\boxed{
-\log \sigma({v'_{w_O}}^\top v_{w_I})
-+
-\sum_{i=1}^{k}
-\mathbb{E}_{w_i\sim P_n(w)}
-\left[
-\log \sigma(-{v'_{w_i}}^\top v_{w_I})
-\right]
-}
+\boxed{\log \sigma({v'_{w_O}}^\top v_{w_I}) + \sum_{i=1}^{k} \mathbb{E}_{w_i\sim P_n(w)} \left[ \log \sigma(-{v'_{w_i}}^\top v_{w_I}) \right]}
 $$
 
 where:
@@ -252,11 +244,7 @@ The paper therefore probabilistically discards some occurrences of frequent word
 A common discard form is:
 
 $$
-\boxed{
-P_{\text{discard}}(w)
-=
-1-\sqrt{\frac{t}{f(w)}}
-}
+\boxed{P_{\text{discard}}(w) = 1-\sqrt{\frac{t}{f(w)}}}
 $$
 
 with a characteristic threshold:
@@ -297,15 +285,7 @@ Less redundant data can make training faster and improve the effective learning 
 Pipeline:
 
 $$
-\boxed{
-\text{Raw corpus}
-\rightarrow
-\text{Subsampling}
-\rightarrow
-\text{Skip-gram pairs}
-\rightarrow
-\text{Negative Sampling}
-}
+\boxed{\text{Raw corpus} \rightarrow \text{Subsampling} \rightarrow \text{Skip-gram pairs} \rightarrow \text{Negative Sampling}}
 $$
 
 ---
@@ -343,15 +323,7 @@ directly.
 The paper uses a score of the form:
 
 $$
-\boxed{
-\operatorname{score}(w_i,w_j)
-=
-\frac{
-\operatorname{count}(w_i\,w_j)-\delta
-}{
-\operatorname{count}(w_i)\,\operatorname{count}(w_j)
-}
-}
+\boxed{\operatorname{score}(w_i,w_j) = \frac{\operatorname{count}(w_i\,w_j)-\delta}{\operatorname{count}(w_i)\,\operatorname{count}(w_j)}}
 $$
 
 The question is:
@@ -369,11 +341,7 @@ The discount $\delta$ reduces accidental high scores from rare co-occurrences.
 Phrase learning:
 
 $$
-\boxed{
-\text{New}+\text{York}
-\rightarrow
-\text{New\_York}
-}
+\boxed{\text{New}+\text{York} \rightarrow \text{New\_York}}
 $$
 
 combines full words into **larger semantic units**.
@@ -381,11 +349,7 @@ combines full words into **larger semantic units**.
 BPE instead learns reusable subword pieces:
 
 $$
-\boxed{
-\text{word/string}
-\rightarrow
-\text{subword units}
-}
+\boxed{\text{word/string} \rightarrow \text{subword units}}
 $$
 
 Conceptually:
@@ -416,13 +380,7 @@ Word2Vec representations exhibit approximately linear semantic relations.
 For example:
 
 $$
-v(\text{Madrid})
--
-v(\text{Spain})
-+
-v(\text{France})
-\approx
-v(\text{Paris})
+v(\text{Madrid}) - v(\text{Spain}) + v(\text{France}) \approx v(\text{Paris})
 $$
 
 and conceptually:
@@ -440,21 +398,13 @@ Embeddings encode statistical context. Vector operations can approximately combi
 Therefore:
 
 $$
-\boxed{
-\text{distributional regularity}
-\rightarrow
-\text{geometric regularity}
-}
+\boxed{\text{distributional regularity} \rightarrow \text{geometric regularity}}
 $$
 
 But:
 
 $$
-\boxed{
-\text{vector arithmetic}
-\neq
-\text{symbolic reasoning}
-}
+\boxed{\text{vector arithmetic} \neq \text{symbolic reasoning}}
 $$
 
 Word2Vec is not executing explicit logical rules.
@@ -465,35 +415,35 @@ Word2Vec is not executing explicit logical rules.
 
 Important numbers:
 
-- Phrase analogy benchmark:  
-  $$
-  \boxed{3218}
-  $$
+- Phrase analogy benchmark: 
+ $$
+ \boxed{3218}
+ $$
 
-- Very large phrase-training setup:  
-  $$
-  \boxed{\sim33\text{ billion words}}
-  $$
+- Very large phrase-training setup: 
+ $$
+ \boxed{\sim33\text{ billion words}}
+ $$
 
-- Large embedding dimensions in some experiments:  
-  $$
-  \boxed{\sim1000}
-  $$
+- Large embedding dimensions in some experiments: 
+ $$
+ \boxed{\sim1000}
+ $$
 
-- Strong phrase analogy performance in a large setup:  
-  $$
-  \boxed{\sim72\%}
-  $$
+- Strong phrase analogy performance in a large setup: 
+ $$
+ \boxed{\sim72\%}
+ $$
 
-- Negative samples for smaller datasets:  
-  $$
-  \boxed{5\text{--}20}
-  $$
+- Negative samples for smaller datasets: 
+ $$
+ \boxed{5\text{--}20}
+ $$
 
-- For very large datasets:  
-  $$
-  \boxed{2\text{--}5}
-  $$
+- For very large datasets: 
+ $$
+ \boxed{2\text{--}5}
+ $$
 
 ---
 
@@ -577,15 +527,7 @@ $$
 ### Negative Sampling
 
 $$
-\boxed{
-\log \sigma({v'_{w_O}}^\top v_{w_I})
-+
-\sum_{i=1}^{k}
-\mathbb{E}_{w_i\sim P_n(w)}
-\left[
-\log \sigma(-{v'_{w_i}}^\top v_{w_I})
-\right]
-}
+\boxed{\log \sigma({v'_{w_O}}^\top v_{w_I}) + \sum_{i=1}^{k} \mathbb{E}_{w_i\sim P_n(w)} \left[ \log \sigma(-{v'_{w_i}}^\top v_{w_I}) \right]}
 $$
 
 ### Noise Distribution
@@ -597,33 +539,19 @@ $$
 ### Frequent-Word Discard Probability
 
 $$
-\boxed{
-P_{\text{discard}}(w)
-=
-1-\sqrt{\frac{t}{f(w)}}
-}
+\boxed{P_{\text{discard}}(w) = 1-\sqrt{\frac{t}{f(w)}}}
 $$
 
 ### Phrase Score
 
 $$
-\boxed{
-\operatorname{score}(w_i,w_j)
-=
-\frac{
-\operatorname{count}(w_i\,w_j)-\delta
-}{
-\operatorname{count}(w_i)\,\operatorname{count}(w_j)
-}
-}
+\boxed{\operatorname{score}(w_i,w_j) = \frac{\operatorname{count}(w_i\,w_j)-\delta}{\operatorname{count}(w_i)\,\operatorname{count}(w_j)}}
 $$
 
 ### Analogy Structure
 
 $$
-\boxed{
-v(B)-v(A)+v(C)\approx v(D)
-}
+\boxed{v(B)-v(A)+v(C)\approx v(D)}
 $$
 
 ---
@@ -644,15 +572,7 @@ $$
 Mnemonic:
 
 $$
-\boxed{
-3/4
-\rightarrow
-5\text{--}20
-\rightarrow
-10^{-5}
-\rightarrow
-3218
-}
+\boxed{3/4 \rightarrow 5\text{--}20 \rightarrow 10^{-5} \rightarrow 3218}
 $$
 
 ---
@@ -698,11 +618,7 @@ $$
 Summary:
 
 $$
-\boxed{
-\text{Day 3 introduces the architectures}
-\rightarrow
-\text{Day 4 makes them faster and more expressive}
-}
+\boxed{\text{Day 3 introduces the architectures} \rightarrow \text{Day 4 makes them faster and more expressive}}
 $$
 
 ---
@@ -769,47 +685,27 @@ The paper makes Skip-gram more scalable by replacing expensive full-softmax trai
 ## 20. Final Recall Map
 
 $$
-\boxed{
-\text{Full Softmax}
-\rightarrow
-\text{Negative Sampling}
-}
+\boxed{\text{Full Softmax} \rightarrow \text{Negative Sampling}}
 $$
 
 $$
-\boxed{
-1\text{ positive}+k\text{ negatives}
-}
+\boxed{1\text{ positive}+k\text{ negatives}}
 $$
 
 $$
-\boxed{
-P_n(w)\propto U(w)^{3/4}
-}
+\boxed{P_n(w)\propto U(w)^{3/4}}
 $$
 
 $$
-\boxed{
-\text{Frequent-word redundancy}
-\rightarrow
-\text{Subsampling}
-}
+\boxed{\text{Frequent-word redundancy} \rightarrow \text{Subsampling}}
 $$
 
 $$
-\boxed{
-\text{New York}
-\rightarrow
-\text{New\_York}
-}
+\boxed{\text{New York} \rightarrow \text{New\_York}}
 $$
 
 $$
-\boxed{
-\text{Distributional statistics}
-\rightarrow
-\text{Vector geometry}
-}
+\boxed{\text{Distributional statistics} \rightarrow \text{Vector geometry}}
 $$
 
 ---
